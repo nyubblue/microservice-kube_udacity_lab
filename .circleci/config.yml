@@ -1,0 +1,17 @@
+version: 2.1
+jobs:
+  install-job:
+    docker:
+      - image: nyubblue/ybun-python-app:v1.0.0
+    steps:
+      - checkout
+      - run:
+          name: install dependencies
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            make install
+workflows:
+  default:
+    jobs:
+      - install-job
