@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/<VCS>/<ORG_NAME>/<PROJECT_NAME>.svg?style=svg&circle-token=1ec60472e946d6e4ec0733d7ccc889cdcae258f2)](<LINK>)
+[![<ORG_NAME>](https://circleci.com/gh/nyubblue/microservice-kube_udacity_lab.svg?style=svg)](<https://github.com/nyubblue/microservice-kube_udacity_lab>)
 
 1. Summary: This project perform a Dockerfile to containerize a application, deploy the containerized application using Docker
 And configure Kubernetes, create cluster and deploy a container using Kubernetes.
