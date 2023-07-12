@@ -10,8 +10,15 @@ jobs:
           command: |
             python3 -m venv venv
             . venv/bin/activate
+            # Install hadolint
+            wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.17.5/hadolint-Linux-x86_64 &&\
+                chmod +x /bin/hadolint
             make install
-            make lint
+      # run lint!
+      - run:
+          name: run lint
+          command: |
+            make lint     
 workflows:
   default:
     jobs:
