@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  install-job:
+  lint-job:
     docker:
       - image: nyubblue/ybun-python-app:v1.0.0
     steps:
@@ -11,7 +11,8 @@ jobs:
             python3 -m venv venv
             . venv/bin/activate
             make install
+            make lint
 workflows:
   default:
     jobs:
-      - install-job
+      - lint-job
