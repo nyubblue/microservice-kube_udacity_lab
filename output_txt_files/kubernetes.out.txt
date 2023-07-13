@@ -21,7 +21,6 @@ ubuntu@ip-172-31-95-46:~/microservice-kube_udacity_lab$ kubectl logs pod/py-hell
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 124-524-500
-127.0.0.1 - - [13/Jul/2023 18:25:58] "POST /predict HTTP/1.1" 200 -
 [2023-07-13 18:26:24,174] INFO in app: JSON payload: 
 {'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
 [2023-07-13 18:26:24,179] INFO in app: Inference payload DataFrame: 
